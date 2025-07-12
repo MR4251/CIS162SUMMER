@@ -35,27 +35,27 @@ header {
 
 nav ul {
     list-style: none;
-    background-color: #c4b497; 
+    background-color: #c4b497;
     padding: 10px;
     text-align: center;
 }
 
 nav ul li {
-    margin: 10px 0;
-    text-align: left;
+    display: inline-block;
+    margin: 0 15px;
 }
-
 
 nav ul li a {
     font-size: 20px;
     font-weight: bold;
-    color: #3b2f2f; 
+    color: #3b2f2f;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #6e4f3a; 
+    color: #6e4f3a;
 }
+
 
 
 
@@ -108,3 +108,58 @@ footer a {
     font-weight: bold;
     text-decoration: underline;
 }
+
+
+.two-column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px 60px;
+    align-items: stretch; 
+}
+
+
+
+.left-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.content-box {
+    background-color: #add8e6;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    min-height: 300px;
+}
+
+.content-box h2 {
+    color: #4a3f35;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.content-box p,
+.content-box li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2e2e2e;
+}
+
+
